@@ -45,6 +45,7 @@ if __name__ == "__main__":
     parser.add_argument("--port", default=5000, type=int, help="port number") 
     args = parser.parse_args()
 
+    # change your own model path below
     model = torch.hub.load('ultralytics/yolov5', 'custom', path='models/last.pt')
     model.eval()
     app.run(host="0.0.0.0", port=args.port)  # debug=True causes Restarting with stat

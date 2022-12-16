@@ -57,6 +57,7 @@ if __name__ == "__main__":
         std=[0.229, 0.224, 0.225]
     )])
     labels = ["hotdog", "not_hotdog"]
+    # change your own model path below
     model = torch.load("models/ResNet152_model.pth", map_location=torch.device('cpu'))
     model.eval()
     app.run(host="0.0.0.0", port=args.port)  # debug=True causes Restarting with stat

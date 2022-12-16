@@ -49,8 +49,11 @@ Run locally for dev, requirements mostly originate from [yolov5](https://github.
 * `(venv) $ python3 restapi.py --port 5000`
 
 Add custom trained model into `models` folder:
+
 YOLO: `models/last.pt`
+
 ResNet: `models/ResNet152_model.pth`
+
 You could change the model path in `webapp-yolo.py` and `webapp-resnet.py`.
 
 
